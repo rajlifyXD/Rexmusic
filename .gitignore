@@ -1,0 +1,35 @@
+# Local secrets and per-machine configuration
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# JavaScript
+node_modules/
+**/node_modules/
+frontend/dist/
+backend/ytdl-service/node_modules/
+
+# Private/local data and runtime files
+*.db
+*.db-wal
+*.db-shm
+data/*
+!data/.gitkeep
+cookies.txt
+*.cookies.txt
+*.log
+
+# Hosting/developer tooling
+.vercel/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
